@@ -1,12 +1,12 @@
 SoftwareType
 	{
 	Name			"Computer Virus"
-	Category		[ Malware ; Worm ; Trojan ]
+	Category		Malware , Worm , Trojan 
 	Description		"Develop a piece of illegal software which can spread quickly and make a lot of illegal cash."
 	Random			0.5
 	IdealPrice		0
 	OptimalDevTime		36
-	OSSupport		[ Computer ; Server ]
+	OSSupport		Computer
 	OneClient		False
 	InHouse			False
 	SubmarketNames		[ Severity; Ability to spread ; Secretive ]
@@ -65,13 +65,13 @@ SoftwareType
 					{
 					Name		"Payment"
 					Description	"This feature will pay the company $1000 per day per paid removal"
-                                Spec          “Network”
-			             Optional	False
+                                        Spec            “Network”
+			                Optional	False
 					DevTime		3
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1 ; 0 ; 0 ]
-                                Server		0.001
+                                        Server		0.001
 					Script_EndOfDay "Product.DevCompany.MakeTransaction(1000 * 0.05 * product.userbase , Illegal Software, \"Malware Payment\");"
 					}
 					{
@@ -85,12 +85,12 @@ SoftwareType
 					{
 					Name		"Upload data"
 					Description	"This feature will scare customers into thinking you still have some data"
-                             Spec         “Network”
+                                        Spec            “Network”
 					DevTime		4
 					Level		2
 					CodeArt		1
 					Submarkets	[ 2 ; 3 ; 1 ]
-                                Server		0.01
+                                        Server		0.01
 					Script_EndOfDay "Product.DevCompany.MakeTransaction(1000 * 0.001 * product.userbase , Illegal Software, \"Malware Payment\");"
 					}
 				]
@@ -98,7 +98,7 @@ SoftwareType
 			{
 			Name 		"Image"
 			Spec		2D
-			Dependencies	"2D Editor”
+			Dependencies	"2D Editor"
 			Optional	True
 			Description	"This adds imagery, making it so the customer doesn’t have to waste their life navigating then reading a boring text file, but just reading the image note that is the background"
 			DevTime		4
