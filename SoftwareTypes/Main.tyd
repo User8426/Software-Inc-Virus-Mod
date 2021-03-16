@@ -1,0 +1,109 @@
+SoftwareType
+	{
+	Name			"Computer Virus"
+	Category		[ Malware ; Worm ; Trojan ]
+	Description		"Develop a piece of illegal software which can spread quickly and make a lot of illegal cash."
+	Random			0.5
+	IdealPrice		0
+	OptimalDevTime		36
+	OSSupport		[ Computer ; Server ]
+	OneClient		False
+	InHouse			False
+	SubmarketNames		[ Severity; Ability to spread ; Secretive ]
+	Categories
+		[
+			{
+			Name			"Malware"
+			Description		"This is a type of computer virus"
+			Popularity		1
+			Submarkets		[ 3; 3; 1 ]
+			Retention		12
+			TimeScale		1
+			Iterative		0.8
+			NameGenerator		namegen
+			}
+                 {
+			Name			"Worm"
+			Description		"This is a type of computer virus that easily spreads"
+			Popularity		1
+			Submarkets		[ 1; 10; 4 ]
+			Retention		4
+			TimeScale		1
+			Iterative		0.8
+			NameGenerator		namegen
+			}
+                 {
+			Name			"Trojan"
+			Description		"This is a type of computer virus that misleads the user (Not the creator of the mod)"
+			Popularity		1
+			Submarkets		[ 2; 5; 10 ]
+			Retention		9
+			TimeScale		1
+			Iterative		0.8
+			NameGenerator		namegen
+			}
+		]
+	Features
+		[
+			{
+			Name 		"System"
+			Spec		System
+			Description	"This feature represents the system aspect of the malware"
+			DevTime		12
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
+			Features
+				[
+					{
+					Name		"Confusing code"
+					Description	"This feature makes the code more complicated, making it harder to prevent infection"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 4; 1 ]
+					}
+					{
+					Name		"Payment"
+					Description	"This feature will pay the company $1000 per day per paid removal"
+                                Spec          “Network”
+			             Optional	False
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1 ; 0 ; 0 ]
+                                Server		0.001
+					Script_EndOfDay "Product.DevCompany.MakeTransaction(1000 * 0.05 * product.userbase , Illegal Software, \"Malware Payment\");"
+					}
+					{
+					Name		"Encryption"
+					Description	"This feature makes it harder to return the software to the original version, without payment"
+					DevTime		6
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Upload data"
+					Description	"This feature will scare customers into thinking you still have some data"
+                             Spec         “Network”
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2 ; 3 ; 1 ]
+                                Server		0.01
+					Script_EndOfDay "Product.DevCompany.MakeTransaction(1000 * 0.001 * product.userbase , Illegal Software, \"Malware Payment\");"
+					}
+				]
+			}
+			{
+			Name 		"Image"
+			Spec		2D
+			Dependencies	"2D Editor”
+			Optional	True
+			Description	"This adds imagery, making it so the customer doesn’t have to waste their life navigating then reading a boring text file, but just reading the image note that is the background"
+			DevTime		4
+			CodeArt		0.4
+			Submarkets	 0
+			}
+		]
+	}
