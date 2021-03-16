@@ -1,0 +1,12 @@
+-start(base)
+-base(base2,end,stop)
+Secret
+Trick
+Virus
+Robbery
+Advanced Robbery
+-base2(end,stop)
++
+Extra Cost For Removal Editon (ECFRE)
+-end(stop)
+.
