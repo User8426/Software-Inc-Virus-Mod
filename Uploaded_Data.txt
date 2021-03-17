@@ -1,2 +1,0 @@
-var extra = Product.Userbase * 0.05 * 1000;
-     Product.DevCompany.MakeTransaction(extra, Sales, "Malware Payment
