@@ -68,7 +68,7 @@ SoftwareType
                                         Spec            “Network”
 			                Optional	False
 					DevTime		3
-					Level		2
+					Level		3
 					CodeArt		1
 					Submarkets	[ 1 ; 0 ; 0 ]
                                         Server		0.001
@@ -87,7 +87,7 @@ SoftwareType
 					Description	"This feature will scare customers into thinking you still have some data"
                                         Spec            “Network”
 					DevTime		4
-					Level		2
+					Level		3
 					CodeArt		1
 					Submarkets	[ 2 ; 3 ; 1 ]
                                         Server		0.01
