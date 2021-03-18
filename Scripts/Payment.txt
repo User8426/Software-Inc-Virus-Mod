@@ -1,14 +1,6 @@
 if (Product.GetVar("Virus", true))
     {
     var extra = Product.Userbase * 0.05 * 1000;
-    Product.DevCompany.MakeTransaction(extra, Sales, "Malware Payment");
-    Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
-    if (Random() * Product.Userbase > 400000);
-        {
-        LaunchLawsuit("Illegal Virus Release Detectedr", Product.Sum, 1);
-        Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
-        Product.Userbase = Product.Userbase * 0;
-        Product.KillAwareness();
-        Product.PutVar("Virus", false);
-        }
-    }
+    Product.DevCompany.MakeTransaction(extra, Sales, Malware_Payment);
+    Product.AddToCashflow(0, 0, 0, extra, 0, Time);
+     }
