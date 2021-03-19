@@ -43,7 +43,6 @@ SoftwareType
 			NameGenerator		namegen
 			}
 		]
-	Features
 		[
 			{
 			Name 		"System"
@@ -104,7 +103,8 @@ SoftwareType
 			DevTime		4
 			CodeArt		0.4
 			Submarkets	 0
-			}
+			Features
+				[
 			                {
 					Name		"ImageEncryption"
 					Description	"Encrypts images so they cant be seen"
@@ -121,23 +121,7 @@ SoftwareType
 					CodeArt		0.5
 					Submarkets	[ 1 ; 0 ; 0 ]
 					}
-					{
-					Name		"SUBFEAT"
-					Description	"DESC"
-					DevTime		6
-					Level		3
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
-					}
-					{
-					Name		"SUBFEAT"
-					Description	"DESC"
-                                        Spec            “Network”
-					DevTime		4
-					Level		3
-					CodeArt		1
-					Submarkets	[ 2 ; 3 ; 1 ]
-					}
+	                	]
 			Name 		"Hardware Usage"
 			Spec		Hardware
 			Dependencies	"2D Editor ; 3D Editor"
@@ -146,5 +130,26 @@ SoftwareType
 			DevTime		12
 			CodeArt		1
 			Submarkets	[ 4 ; 0 ; 1 ]
+					{
+					Name		"Difficulty with running software"
+					Description	"Increases the likelihood of a user paying for the fix."
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	[ 4 ; 0 ; 1 ]
+					Server		0.01
+					Script_EndOfDay "/Scripts/Difficulty.txt"
+					}
+					{
+					Name		"Cryptominer"
+					Description	"Earn extra cash by mining bitcoin with your users GPU"
+                                        Spec            “Network”
+					DevTime		8
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1 ; 0 ; 1 ]
+					Server		0.0001
+					Script_EndOfDay "/Scripts/CryptoMiner.txt"
+					}
 		]
 	}
