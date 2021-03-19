@@ -117,7 +117,7 @@ SoftwareType
 					Name		"Background"
 					Description	"Changes the background to a note image"
 					DevTime		4
-					Level		3
+					Level		2
 					CodeArt		0.5
 					Submarkets	[ 1 ; 0 ; 0 ]
 					}
