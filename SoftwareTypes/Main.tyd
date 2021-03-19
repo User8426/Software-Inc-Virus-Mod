@@ -105,5 +105,46 @@ SoftwareType
 			CodeArt		0.4
 			Submarkets	 0
 			}
+			                {
+					Name		"ImageEncryption"
+					Description	"Encrypts images so they cant be seen"
+					DevTime		6
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Background"
+					Description	"Changes the background to a note image"
+					DevTime		4
+					Level		3
+					CodeArt		0.5
+					Submarkets	[ 1 ; 0 ; 0 ]
+					}
+					{
+					Name		"SUBFEAT"
+					Description	"DESC"
+					DevTime		6
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"SUBFEAT"
+					Description	"DESC"
+                                        Spec            “Network”
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	[ 2 ; 3 ; 1 ]
+					}
+			Name 		"Hardware Usage"
+			Spec		Hardware
+			Dependencies	"2D Editor ; 3D Editor"
+			Optional	True
+			Description	"This allows the hardware to be used to the best advntage for whatever purpose. Making it harder to run normal software, sure. Want to mine BTC, why not we can make it do that to."
+			DevTime		12
+			CodeArt		1
+			Submarkets	[ 4 ; 0 ; 1 ]
 		]
 	}
