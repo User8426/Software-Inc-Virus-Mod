@@ -153,3 +153,59 @@ SoftwareType
 					}
 		]
 	}
+
+SoftwareType
+	{
+	Name			"CryptoMiner"
+	Category		Standard 
+	Description		"Develop a piece of illegal software which can use a user's (NOT THE CREATOR OF THE MOD) computer in order to 'mine' crypto currency after it manages to get on the computer in some way."
+	Random			0.5
+	IdealPrice		0
+	OptimalDevTime		36
+	OSSupport		Computer
+	OneClient		False
+	InHouse			False
+	SubmarketNames		[ Severity; Effectiveness at mining ; Secretive ]
+	Categories
+		[
+			{
+			Name			"Standard"
+			Description		"This is the most basic version of a cryptominer that is spread byninfected programs and infects new computers with a cryptominer"
+			Popularity		1
+			Submarkets		[ 3; 3; 1 ]
+			Retention		12
+			TimeScale		1
+			Iterative		0.8
+			NameGenerator		namegen
+			}
+		]
+		[
+			{
+			Name 		"System and Hardware"
+			Spec		System ; Hardware
+			Description	"This feature represents the system aspect of the miner with hardware thrown in"
+			DevTime		12
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Limiter"
+					Description	"This feature makes the cryptominer run at limited percentages of cpu and gpu capability, reducing the chance of the user hearing the fans speed up to cope with more."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 4 ]
+					}
+					{
+					Name		"Mine Bitcoin"
+					Description	"This feature will pay the company 100% of the value of all bitcoins mined from infected computers."
+                                        Spec            “Network”
+			                Optional	False
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1 ; 0 ; 0 ]
+                                        Server		0.001
+					Script_EndOfDay "/Scripts/CryptoMiner.txt"
+					}
