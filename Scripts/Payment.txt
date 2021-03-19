@@ -2,6 +2,7 @@ if (Product.GetVar("Virus", true))
     {
     var extra = Product.Userbase * 0.005 * 1000;
     Product.DevCompany.MakeTransaction(extra, Sales, "Malware Payment");
+    Product.Userbase = Product.Userbase * 0.995
     Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
     if (Random() * Product.Userbase > 400000)
         {
