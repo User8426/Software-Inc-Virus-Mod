@@ -1,6 +1,6 @@
 if (Product.GetVar("Virus", true))
     {
-    var extra = Product.Userbase * 0.01 * 10;
+    var extra = Product.Userbase * 0.25 * 10;
     Product.DevCompany.MakeTransaction(extra, Sales, "Crypto Currency Mined (In your currency)");
     Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
     }    
