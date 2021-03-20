@@ -123,9 +123,11 @@ SoftwareType
 					Submarkets	[ 1 ; 0 ; 0 ]
 					}
 	                	]
+			}
+			{
 			Name 		"Hardware Usage"
 			Spec		Hardware
-			Dependencies	"2D Editor ; 3D Editor"
+			Dependencies	["2D Editor" ; "3D Editor" ]
 			Optional	True
 			Description	"This allows the hardware to be used to the best advntage for whatever purpose. Making it harder to run normal software, sure. Want to mine BTC, why not we can make it do that to."
 			DevTime		12
@@ -155,6 +157,8 @@ SoftwareType
 					Script_EndOfDay "/Scripts/CryptoMiner.txt"
 					}
 				]
+			}
+		]
 		}
 		]
 	}
