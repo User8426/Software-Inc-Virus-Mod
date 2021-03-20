@@ -1,0 +1,12 @@
+-start(base)
+-base(base2,end,stop)
+Bad
+Evil
+Unwanted
+Not good
+-base2(end,stop)
+ Usb
+ USB
+ Universal Serial Bus
+-end(stop)
+.
