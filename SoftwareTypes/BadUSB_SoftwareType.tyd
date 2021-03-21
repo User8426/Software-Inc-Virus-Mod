@@ -142,25 +142,41 @@ Manufacturing
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
-					Name		"Test subfeat 2"
-					Description	"This feature will cost the owner $1000 per day when it is released"
-					DevTime		2
+					Name		"Ransomware"
+					Description	"This feature will force the user to pay to unlock thei computer"
+					DevTime		4
 					Level		3
 					CodeArt		1
-					Submarkets	0 #No submarkets needed for level 3 features
+					Submarkets	[ 8; 1; 1 ]
 					Script_EndOfDay "/Scripts/payment.txt"
 					}
 				]
 			}
 			{
-			Name 		"Test feat 2"
+			Name 		"Audio"
 			Spec		Audio
 			Dependencies	"Audio Tool"
 			Optional	True
-			Description	"This feature can be deselected, completely removing Audio features and Audio Tool dependencies from the product"
+			Description	"This feature allows for new audio features to be enabled."
 			DevTime		4
 			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			Submarkets	[ 1; 0; 3 ]# Severity; Ability to bypass security; Features
 			}
+					{
+					Name		"Rickroll"
+					Description	"Play Never Gonna Give You Up every time the user turns on the computer, and have it loop until they turn the computer off."
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Volume Changer"
+					Description	"Randomly change the volume, to annoy the user."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 3 ]
+					}
 		]
 	}
