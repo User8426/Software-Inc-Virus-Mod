@@ -8,3 +8,4 @@ Adds two new software types: Viruses and Cryptominers. Instead of having people 
 Patch Notes
 
 V1.1 - Added BadUSB software type, however it is not complete.
+V1.2 - BadUSB software type is now working and is in a more complete state.
