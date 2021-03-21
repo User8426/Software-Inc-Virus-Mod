@@ -178,5 +178,32 @@ Manufacturing
 					CodeArt		1
 					Submarkets	[ 1; 1; 3 ]
 					}
+			{
+			Name 		"Hardware Effects"
+			Spec		Hardware
+			Description	"This feature allows the BadUSB to be able to do more sophisticated commands utilising the hardware."
+			DevTime		8
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Disable inputs/Outputs"
+					Description	"Disables certain inputs/outputs to make it harder to be disabled."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+					}
+					{
+					Name		"Cryptominer"
+					Description	"This feature will force the computer into mining bitcoin."
+					DevTime		6
+					Level		3
+					CodeArt		1
+					Submarkets	[ 4; 1; 0 ]
+					Script_EndOfDay "/Scripts/CryptoMiner.txt"
+					}
+				]
 		]
 	}
