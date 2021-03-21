@@ -143,7 +143,7 @@ Manufacturing
 					}
 					{
 					Name		"Ransomware"
-					Description	"This feature will force the user to pay to unlock thei computer"
+					Description	"This feature will force the user to pay to unlock their computer"
 					DevTime		4
 					Level		3
 					CodeArt		1
@@ -160,8 +160,9 @@ Manufacturing
 			Description	"This feature allows for new audio features to be enabled."
 			DevTime		4
 			CodeArt		1
-			Submarkets	[ 1; 0; 3 ]# Severity; Ability to bypass security; Features
-			}
+			Submarkets	[ 1; 0; 3 ]# Severity; Ability to bypass security; 
+			Features
+				[
 					{
 					Name		"Rickroll"
 					Description	"Play Never Gonna Give You Up every time the user turns on the computer, and have it loop until they turn the computer off."
@@ -178,6 +179,8 @@ Manufacturing
 					CodeArt		1
 					Submarkets	[ 1; 1; 3 ]
 					}
+				]
+			}
 			{
 			Name 		"Hardware Effects"
 			Spec		Hardware
@@ -204,6 +207,31 @@ Manufacturing
 					Submarkets	[ 4; 1; 0 ]
 					Script_EndOfDay "/Scripts/CryptoMiner.txt"
 					}
+					{
+					Name		"Internal Test Points"
+					Description	"This feature inserts a test point inside the USB for letting the buyer test it."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Internal LED"
+					Description	"This feature inserts an LED inside the USB for the buyer so they can test it."
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Case"
+					Description	"This feature adds a case to the USB, so it looks more genuine and someone is more likely to use it."
+					DevTime		1
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 0 ]
+					}
 				]
+		}
 		]
 	}
