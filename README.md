@@ -10,6 +10,10 @@ Image Credits
 https://pixabay.com/vectors/usb-port-usb-drive-universal-24859/
 https://www.premiumusb.com/blog/whats-inside-a-usb-drive
 https://pixabay.com/vectors/bottle-pet-drink-plastic-159119/
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTest_point&psig=AOvVaw3E8horBLtzVvMzmY6LboBM&ust=1616692143695000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODGldq1ye8CFQAAAAAdAAAAABAE
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wikihow.com%2FFormat-a-Write%25E2%2580%2593Protected-Pen-Drive&psig=AOvVaw0AAmDsWCgSmj9HgLjx_e3k&ust=1616692228883000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjJ74K2ye8CFQAAAAAdAAAAABAG
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ACircuit_board_from_a_USB_3.0_external_2.5-inch_HDD_enclosure.jpg&psig=AOvVaw3Pllwi2dlw0WpGUce3eN-z&ust=1616692315639000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCND4mKy2ye8CFQAAAAAdAAAAABAL
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.electronicsweekly.com%2Fnews%2Fproducts%2Femech-enclosures%2Fsmall-enclosures-for-usb-dongles-2016-06%2F&psig=AOvVaw1_vgtv6RIZ3wpgc8PukFbC&ust=1616692486227000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCfx_22ye8CFQAAAAAdAAAAABAE
 
 Patch Notes
 
