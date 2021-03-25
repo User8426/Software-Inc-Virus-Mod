@@ -30,19 +30,21 @@ Manufacturing
 		[
 			{
 			Name 			"USB Connector"
-			Thumbnail		"AThumbnail.png"
+			Thumbnail		"USB.png"
 			BuiltInThumbnail	Gyroscope
 			Price			0.5
 			Time			4
 			}
 			{
 			Name 			"USB Mass Storage Controller Device"
+			Thumbnail		"USB Mass Storage Controller.png"
 			BuiltInThumbnail	Vibration
 			Price			0.5
 			Time			2
 			}
 			{
 			Name 			"Test Point"
+			Thumbnail		"TESTUSB.png"
 			BuiltInThumbnail	Plastic
 			Price			0.5
 			Time			2
@@ -50,18 +52,21 @@ Manufacturing
 			}
 			{
 			Name 			"Flash Memory Chip"
+			Thumbnail		"NAND.png"
 			BuiltInThumbnail	PCB
 			Price			0.5
 			Time			4
 			}
 			{
 			Name 			"Crystal Oscilator"
+			Thumbnail		"CRYSTAL.png"
 			BuiltInThumbnail	Joystick
 			Price			0.5
 			Time			4
 			}
 			{
 			Name 			LED
+			Thumbnail		"LED.png"
 			BuiltInThumbnail	Harddrive
 			Price			0.5
 			Time			4
@@ -69,18 +74,21 @@ Manufacturing
 			}
 			{
 			Name 			"Write-Protect Switch"
+			Thumbnail		"SWITCH.png"
 			BuiltInThumbnail	Microchip
 			Price			0.5
 			Time			8
 			}
 			{
 			Name 			Board
+			Thumbnail		"USBBOARD.png"
 			BuiltInThumbnail	USB
 			Price			0.5
 			Time			16
 			}
 			{
 			Name 			"USB Case"
+			Thumbnail		"USBCASE.png"
 			BuiltInThumbnail	USB
 			Price			0.5
 			Time			8
@@ -88,18 +96,21 @@ Manufacturing
 			}
 			{
 			Name 			Plastic
+			Thumbnail		"PLASTIC.png"
 			BuiltInThumbnail	USB
 			Price			0.5
 			Time			8
 			}
 			{
 			Name 			"Fiberglass Composite"
+			Thumbnail		"Fiberglass.png"
 			BuiltInThumbnail	USB
 			Price			0.5
 			Time			4
 			}
 			{
 			Name 			"Epoxy Binder"
+			Thumbnail		"Epoxy.png"
 			BuiltInThumbnail	USB
 			Price			0.5
 			Time			4
