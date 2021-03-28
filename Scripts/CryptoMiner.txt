@@ -2,5 +2,13 @@ if (Product.GetVar("Virus", true))
     {
     var extra = Product.Userbase * 0.25 * 10;
     Product.DevCompany.MakeTransaction(extra, Sales, "Crypto Currency Mined (In your currency)");
-    Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
-    }    
+    Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart  
+    if (Random() * Product.Userbase > 400000)
+        {
+        LaunchLawsuit("Illegal Cryptominer Release Detected", Product.Sum, 1);
+        Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
+        Product.Userbase = Product.Userbase * 0;
+        Product.KillAwareness();
+        Product.PutVar("Virus", false);
+        }
+    }
